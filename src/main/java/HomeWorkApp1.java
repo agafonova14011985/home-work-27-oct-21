@@ -1,16 +1,66 @@
 public class HomeWorkApp1 {
-    //job1
-    //Доброго Вечера
-    //комп 7 винда 32 рызрядный еле установила программы,
-    // и в итоге если создаешь пакет, то в пакете не может создаться класс.
-
 
     public static void main(String[] args) {
-        printThereWorlds();
-        sheckSumSign();
-        printColor();
-        compareNumbers();
+        //Практическая 1
+        //printThereWorlds();
+        //sheckSumSign();
+        //printColor();
+        //compareNumbers();
+
+        // практическая №2
+        theSummaOfTwoNumbers();
+        comparisonOfNumbers();
+        comparisonOfNumbers1();
+        stringandnamber("word:");
+        leapyear();
     }
+
+
+
+    //упражнение 2
+    public static void theSummaOfTwoNumbers() {
+        int a = 21;
+        int b = 10;
+        int f = a + b;
+        if ( f >= 10 && f <= 20 ) {
+            System.out.println( "True"); }
+        else if ( f < 10 ){ System.out.println( "False"); }
+        else if ( f > 20 ){ System.out.println( "False"); } }
+
+
+        // упражнение 2
+    public static void comparisonOfNumbers() {
+    int a = -1;
+    if ( a >= 0 ) {System.out.println("Число положительно");}
+    else if ( a < 0 ) {System.out.println("Число отрицательно");} }
+
+    // Упражнение 3
+    public static void comparisonOfNumbers1() {
+        int a = 10;
+        if ( a >= 0 ) { System.out.println("True"); }
+        else if ( a < 0 ) {System.out.println("False");} }
+
+    // Упражнение 4
+    public static void stringandnamber(String word){
+        int counter = 1;
+        while ( counter < 4 ) {System.out.println( word + counter ++);} }
+
+        // упражнение 5 в процессе проверка
+    public static void leapyear() {
+        for ( int a = 1000; a < 1010; a++ ) {
+         if (!( a  % 4 == 0) || (( a  % 100 == 0) && !( a  % 400 == 0)))
+             System.out.println( a  + " не високосный");
+                  else System.out.println( a  + " високосный");
+        }
+    }
+
+
+
+
+
+
+
+
 
     public static void printThereWorlds() {
         System.out.println("Orange");
